@@ -4,10 +4,24 @@
 
 MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，目前包含以下部分：
 
-- [simple-ws-chatroom](./simple-ws-chatroom): 简单的基于 WebSocket 的多人聊天室
-
-- [live](./live): 音频直播的部分实验
-
 # Credits & Motivation
 
+## FE
+
+- [react-chat-ui](https://github.com/brandonmowat/react-chat-ui)
+
+## Java
+
 - [CookIM #Project#](https://github.com/cookeem/CookIM): Distributed web chat application base websocket built on akka.
+
+- [gossip](https://github.com/amezng/gossip)
+
+## Go
+
+- [goim](https://github.com/alberliu/goim)
+
+## Node.js
+
+## Chatbot
+
+- [botui](https://github.com/botui/botui)
