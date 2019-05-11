@@ -8,7 +8,9 @@ MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，
 
 ## FE
 
-- [react-chat-ui](https://github.com/brandonmowat/react-chat-ui)
+- [react-chat-ui](https://github.com/brandonmowat/react-chat-ui): 🙊 A library of React components for building chat UI's.
+
+- [css-only-chat](https://github.com/kkuchta/css-only-chat): A truly monstrous async web chat using no JS whatsoever on the frontend.
 
 ## Java
 
