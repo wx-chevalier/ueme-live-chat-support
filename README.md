@@ -18,6 +18,8 @@ MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，
 
 - [gossip](https://github.com/amezng/gossip)
 
+- [cim #Project#](https://github.com/crossoverJie/cim): 📲cim(cross IM) 适用于开发者的即时通讯系统 -
+
 ## Go
 
 - [goim](https://github.com/alberliu/goim)
