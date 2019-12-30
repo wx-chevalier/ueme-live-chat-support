@@ -4,7 +4,6 @@
 
 MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，目前包含以下部分：
 
-
 # Home & More | 延伸阅读
 
 ![](https://i.postimg.cc/59QVkFPq/image.png)
@@ -38,6 +37,10 @@ MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，
 - [react-chat-ui](https://github.com/brandonmowat/react-chat-ui): 🙊 A library of React components for building chat UI's.
 
 - [css-only-chat](https://github.com/kkuchta/css-only-chat): A truly monstrous async web chat using no JS whatsoever on the frontend.
+
+- [react-messenger](https://github.com/sejr/react-messenger): Chat UX components built with React, inspired by Facebook Messenger.
+
+- [react-chat-elements](https://github.com/Detaysoft/react-chat-elements): Reactjs chat elements chat UI, react chat components
 
 ## Java
 
