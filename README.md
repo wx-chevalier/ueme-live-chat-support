@@ -52,10 +52,11 @@ MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，
 
 ## Go
 
-- [goim](https://github.com/alberliu/goim)
+- [goim #Project#](https://github.com/alberliu/goim): IM 是一个即时通讯服务器，代码全部使用 Golang 完成。
 
 ## Node.js
 
 ## Chatbot
 
-- [botui](https://github.com/botui/botui)
+- [botui #Project#](https://github.com/botui/botui): A JavaScript framework to create conversational UIs.
+
