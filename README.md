@@ -1,38 +1,106 @@
-![group](https://user-images.githubusercontent.com/5803001/47567173-68044c00-d960-11e8-99f6-6f4bd83dabfb.png)
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
-# MushiChat(bot): Den Den Mushi for One Piece
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/wx-chevalier/repo">
+    <img src="header.svg" alt="Logo" style="width: 100vw;height: 400px" />
+  </a>
 
-MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，目前包含以下部分：
+  <p align="center">
+    <a href="https://github.com/wx-chevalier/repo">Demo</a>
+    ·
+    <a href="https://github.com/wx-chevalier">更多项目</a>
+    ·
+    <a href="https://ng-tech.icu/books">参考资料</a>
+  </p>
+</p>
 
-# Home & More | 延伸阅读
+<!-- ABOUT THE PROJECT -->
 
-![](https://i.postimg.cc/59QVkFPq/image.png)
+# Introduction
 
-您可以通过以下导航来在 Gitbook 中阅读笔者的系列文章，涵盖了技术资料归纳、编程语言与理论、Web 与大前端、服务端开发与基础架构、云计算与大数据、数据科学与人工智能、产品设计等多个领域：
+ueme-chat 从属于 [ueme](https://github.com/wx-chevalier/ueme?q=) 体验中台系列，该仓库是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦。
 
-- 知识体系：《[Awesome Lists](https://ngte-al.gitbook.io/i/)》、《[Awesome CheatSheets](https://ngte-ac.gitbook.io/i/)》、《[Awesome Interviews](https://github.com/wx-chevalier/Awesome-Interviews)》、《[Awesome RoadMaps](https://github.com/wx-chevalier/Awesome-RoadMaps)》、《[Awesome MindMaps](https://github.com/wx-chevalier/Awesome-MindMaps)》、《[Awesome-CS-Books-Warehouse](https://github.com/wx-chevalier/Awesome-CS-Books-Warehouse)》
+![电话虫示意](https://user-images.githubusercontent.com/5803001/47567173-68044c00-d960-11e8-99f6-6f4bd83dabfb.png)
 
-- 编程语言：《[编程语言理论](https://ngte-pl.gitbook.io/i/)》、《[Java 实战](https://ngte-pl.gitbook.io/i/java/java)》、《[JavaScript 实战](https://ngte-pl.gitbook.io/i/javascript/javascript)》、《[Go 实战](https://ngte-pl.gitbook.io/i/go/go)》、《[Python 实战](https://ngte-pl.gitbook.io/i/python/python)》、《[Rust 实战](https://ngte-pl.gitbook.io/i/rust/rust)》
+## Nav | 导航
 
-- 软件工程、模式与架构：《[编程范式与设计模式](https://ngte-se.gitbook.io/i/)》、《[数据结构与算法](https://ngte-se.gitbook.io/i/)》、《[软件架构设计](https://ngte-se.gitbook.io/i/)》、《[整洁与重构](https://ngte-se.gitbook.io/i/)》、《[研发方式与工具](https://ngte-se.gitbook.io/i/)》
+# Getting Started
 
-* Web 与大前端：《[现代 Web 开发基础与工程实践](https://ngte-web.gitbook.io/i/)》、《[数据可视化](https://ngte-fe.gitbook.io/i/)》、《[iOS](https://ngte-fe.gitbook.io/i/)》、《[Android](https://ngte-fe.gitbook.io/i/)》、《[混合开发与跨端应用](https://ngte-fe.gitbook.io/i/)》
+To get a local copy up and running follow these simple steps.
 
-* 服务端开发实践与工程架构：《[服务端基础](https://ngte-be.gitbook.io/i/)》、《[微服务与云原生](https://ngte-be.gitbook.io/i/)》、《[测试与高可用保障](https://ngte-be.gitbook.io/i/)》、《[DevOps](https://ngte-be.gitbook.io/i/)》、《[Node](https://ngte-be.gitbook.io/i/)》、《[Spring](https://ngte-be.gitbook.io/i/)》、《[信息安全与渗透测试](https://ngte-be.gitbook.io/i/)》
+## Prerequisites
 
-* 分布式基础架构：《[分布式系统](https://ngte-infras.gitbook.io/i/)》、《[分布式计算](https://ngte-infras.gitbook.io/i/)》、《[数据库](https://ngte-infras.gitbook.io/i/)》、《[网络](https://ngte-infras.gitbook.io/i/)》、《[虚拟化与编排](https://ngte-infras.gitbook.io/i/)》、《[云计算与大数据](https://ngte-infras.gitbook.io/i/)》、《[Linux 与操作系统](https://ngte-infras.gitbook.io/i/)》
+This is an example of how to list things you need to use the software and how to install them.
 
-* 数据科学，人工智能与深度学习：《[数理统计](https://ngte-aidl.gitbook.io/i/)》、《[数据分析](https://ngte-aidl.gitbook.io/i/)》、《[机器学习](https://ngte-aidl.gitbook.io/i/)》、《[深度学习](https://ngte-aidl.gitbook.io/i/)》、《[自然语言处理](https://ngte-aidl.gitbook.io/i/)》、《[工具与工程化](https://ngte-aidl.gitbook.io/i/)》、《[行业应用](https://ngte-aidl.gitbook.io/i/)》
+- npm
 
-* 产品设计与用户体验：《[产品设计](https://ngte-pd.gitbook.io/i/)》、《[交互体验](https://ngte-pd.gitbook.io/i/)》、《[项目管理](https://ngte-pd.gitbook.io/i/)》
+```sh
+npm install npm@latest -g
+```
 
-* 行业应用：《[行业迷思](https://github.com/wx-chevalier/Business-Series)》、《[功能域](https://github.com/wx-chevalier/Business-Series)》、《[电子商务](https://github.com/wx-chevalier/Business-Series)》、《[智能制造](https://github.com/wx-chevalier/Business-Series)》
+## Installation
 
-此外，前往 [xCompass](https://wx-chevalier.github.io/home/#/search) 交互式地检索、查找需要的文章/链接/书籍/课程；或者在在 [MATRIX 文章与代码索引矩阵](https://github.com/wx-chevalier/Developer-Zero-To-Mastery)中查看文章与项目源代码等更详细的目录导航信息。最后，你也可以关注微信公众号：『**某熊的技术之路**』以获取最新资讯。
+1. Clone the repo
 
-# Motivation & Credits
+```sh
+git clone https://github.com/wx-chevalier/repo.git
+```
 
-## FE
+2. Install NPM packages
+
+```sh
+npm install
+```
+
+<!-- USAGE EXAMPLES -->
+
+## Usage
+
+Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+
+_For more examples, please refer to the [Documentation](https://example.com)_
+
+# About
+
+<!-- ROADMAP -->
+
+## Roadmap
+
+See the [open issues](https://github.com/wx-chevalier/repo/issues) for a list of proposed features (and known issues).
+
+<!-- CONTRIBUTING -->
+
+## Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## Acknowledgements
+
+- [Awesome-Lists](https://github.com/wx-chevalier/Awesome-Lists): 📚 Guide to Galaxy, curated, worthy and up-to-date links/reading list for ITCS-Coding/Algorithm/SoftwareArchitecture/AI. 💫 ITCS-编程/算法/软件架构/人工智能等领域的文章/书籍/资料/项目链接精选。
+
+- [Awesome-CS-Books](https://github.com/wx-chevalier/Awesome-CS-Books): :books: Awesome CS Books/Series(.pdf by git lfs) Warehouse for Geeks, ProgrammingLanguage, SoftwareEngineering, Web, AI, ServerSideApplication, Infrastructure, FE etc. :dizzy: 优秀计算机科学与技术领域相关的书籍归档。
+
+### FE
 
 - [react-chat-ui](https://github.com/brandonmowat/react-chat-ui): 🙊 A library of React components for building chat UI's.
 
@@ -42,7 +110,7 @@ MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，
 
 - [react-chat-elements](https://github.com/Detaysoft/react-chat-elements): Reactjs chat elements chat UI, react chat components
 
-## Java
+### Java
 
 - [CookIM #Project#](https://github.com/cookeem/CookIM): Distributed web chat application base websocket built on akka.
 
@@ -50,12 +118,32 @@ MushiChat 是笔者对于 IM 聊天/Live 直播等领域的实验尝试集锦，
 
 - [cim #Project#](https://github.com/crossoverJie/cim): 📲cim(cross IM) 适用于开发者的即时通讯系统 -
 
-## Go
+### Go
 
 - [goim](https://github.com/alberliu/goim)
 
-## Node.js
+### Node.js
 
-## Chatbot
+### Chatbot
 
 - [botui](https://github.com/botui/botui)
+
+## Copyright & More | 延伸阅读
+
+笔者所有文章遵循[知识共享 署名 - 非商业性使用 - 禁止演绎 4.0 国际许可协议](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh)，欢迎转载，尊重版权。您还可以前往 [NGTE Books](https://ng-tech.icu/books/) 主页浏览包含知识体系、编程语言、软件工程、模式与架构、Web 与大前端、服务端开发实践与工程架构、分布式基础架构、人工智能与深度学习、产品运营与创业等多类目的书籍列表：
+
+[![NGTE Books](https://s2.ax1x.com/2020/01/18/19uXtI.png)](https://ng-tech.icu/books/)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/wx-chevalier/repo.svg?style=flat-square
+[contributors-url]: https://github.com/wx-chevalier/repo/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/wx-chevalier/repo.svg?style=flat-square
+[forks-url]: https://github.com/wx-chevalier/repo/network/members
+[stars-shield]: https://img.shields.io/github/stars/wx-chevalier/repo.svg?style=flat-square
+[stars-url]: https://github.com/wx-chevalier/repo/stargazers
+[issues-shield]: https://img.shields.io/github/issues/wx-chevalier/repo.svg?style=flat-square
+[issues-url]: https://github.com/wx-chevalier/repo/issues
+[license-shield]: https://img.shields.io/github/license/wx-chevalier/repo.svg?style=flat-square
+[license-url]: https://github.com/wx-chevalier/repo/blob/master/LICENSE.txt
