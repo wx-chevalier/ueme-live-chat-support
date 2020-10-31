@@ -102,6 +102,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### FE
 
+- [ChatUI #Project#](https://github.com/alibaba/ChatUI): The UI design language and React library for Conversational UI.
+
 - [react-chat-ui](https://github.com/brandonmowat/react-chat-ui): 🙊 A library of React components for building chat UI's.
 
 - [css-only-chat](https://github.com/kkuchta/css-only-chat): A truly monstrous async web chat using no JS whatsoever on the frontend.
@@ -120,7 +122,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ### Go
 
-- [goim](https://github.com/alberliu/goim)
+- [goim #Project#](https://github.com/alberliu/goim): IM 是一个即时通讯服务器，代码全部使用 Golang 完成。
 
 ### Node.js
 
