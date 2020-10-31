@@ -38,6 +38,8 @@
     "storybook": "start-storybook -p 6006"
   },
   "dependencies": {
+    "@chatui/core": "^0.1.1",
+    "@m-fe/utils": "^0.3.16",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-keys": "^2.6.0"
