@@ -2181,10 +2181,10 @@
     tslint-plugin-prettier "^2.3.0"
     tslint-react "^5.0.0"
 
-"@m-fe/utils@^0.3.16":
-  version "0.3.16"
-  resolved "https://registry.npm.taobao.org/@m-fe/utils/download/@m-fe/utils-0.3.16.tgz#a8af5ccde9107f81f67bfb9b3b3f6b5a814b5664"
-  integrity sha1-qK9czekQf4H2e/ubOz9rWoFLVmQ=
+"@m-fe/utils@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.npm.taobao.org/@m-fe/utils/download/@m-fe/utils-0.4.0.tgz#b5df6997f49b7f94ab42212ecdcb07ae2652646c"
+  integrity sha1-td9pl/Sbf5SrQiEuzcsHriZSZGw=
   dependencies:
     dayjs "^1.8.26"
     fast-deep-equal "^2.0.1"
@@ -14785,7 +14785,7 @@ react-docgen@^5.0.0:
     node-dir "^0.1.10"
     strip-indent "^3.0.0"
 
-react-dom@^16.13.1, react-dom@^16.8.3:
+react-dom@^16.8.3:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
   integrity sha512-81PIMmVLnCNLO/fFOQxdQkvEq/+Hfpv24XNJfpyZhTRfO0QcmQIF/PgCa1zCOj2w1hrn12MFLyaJ/G0+Mxtfag==
@@ -14962,7 +14962,7 @@ react-textarea-autosize@^7.1.0:
     "@babel/runtime" "^7.1.2"
     prop-types "^15.6.0"
 
-react@^16.13.1, react@^16.8.3:
+react@^16.8.3:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   integrity sha512-YMZQQq32xHLX0bz5Mnibv1/LHb3Sqzngu7xstSM+vrkE5Kzr9xE0yMByK5kMoTK30YVJE61WfbxIFFvfeDKT1w==
