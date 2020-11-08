@@ -1,16 +1,21 @@
-import Chat, { Bubble, useMessages } from '@chatui/core';
+import Chat, { Bubble, MessageProps, QuickReplyItemProps, useMessages } from '@chatui/core';
 import cn from 'classnames';
 import * as React from 'react';
+
+import { IRoomProps } from '../../types';
 
 import './index.css';
 
 const prefix = 'live-consultation-room';
 
-const initialMessages = [
+const defaultInitialMessages = [
   {
     type: 'text',
     content: { text: '主人好，我是智能助理，你的贴心小助手~' },
-    user: { avatar: '//gw.alicdn.com/tfs/TB1DYHLwMHqK1RjSZFEXXcGMXXa-56-62.svg' }
+    user: {
+      avatar:
+        'https://ufc-assets.oss-cn-shanghai.aliyuncs.com/%E5%89%8D%E7%AB%AF%E8%B5%84%E6%BA%90/Logo/logo_%E7%95%99%E7%A9%BA.jpg'
+    }
   },
   {
     type: 'image',
@@ -32,19 +37,28 @@ const defaultQuickReplies = [
   }
 ];
 
-export interface LiveConsultationRoomProps {
+export interface LiveConsultationRoomProps extends IRoomProps {
   className?: string;
   style?: Record<string, string | number>;
 }
 
-export const LiveConsultationRoom = ({ className, style }: LiveConsultationRoomProps) => {
+export const LiveConsultationRoom = ({
+  className,
+  style,
+  quickReplies = defaultQuickReplies,
+
+  title = '智能助理',
+  initialMessages = defaultInitialMessages,
+  answerMessage,
+  ...rest
+}: LiveConsultationRoomProps) => {
   // 消息列表
   const { messages, appendMsg, setTyping } = useMessages(initialMessages);
 
   // 发送回调
-  function handleSend(type, val) {
+  function handleSend(type: string, val: string) {
     if (type === 'text' && val.trim()) {
-      // TODO: 发送请求
+      // 添加用户发送的消息
       appendMsg({
         type: 'text',
         content: { text: val },
@@ -52,23 +66,31 @@ export const LiveConsultationRoom = ({ className, style }: LiveConsultationRoomP
       });
 
       setTyping(true);
+    }
+
+    // 获得回复的消息，然后添加
+    (async () => {
+      const replyMessage = await answerMessage({
+        type: 'text',
+        content: { text: val }
+      });
 
       // 模拟回复消息
       setTimeout(() => {
         appendMsg({
-          type: 'text',
-          content: { text: '亲，您遇到什么问题啦？请简要描述您的问题~' }
+          type: replyMessage.type,
+          content: replyMessage.content
         });
-      }, 1000);
-    }
+      }, 599);
+    })();
   }
 
   // 快捷短语回调，可根据 item 数据做出不同的操作，这里以发送文本消息为例
-  function handleQuickReplyClick(item) {
+  function handleQuickReplyClick(item: QuickReplyItemProps) {
     handleSend('text', item.name);
   }
 
-  function renderMessageContent(msg) {
+  function renderMessageContent(msg: MessageProps) {
     const { type, content } = msg;
 
     // 根据消息类型来渲染
@@ -89,12 +111,13 @@ export const LiveConsultationRoom = ({ className, style }: LiveConsultationRoomP
   return (
     <div className={cn(className, `${prefix}-container`)} style={style}>
       <Chat
-        navbar={{ title: '智能助理' }}
+        navbar={{ title }}
         messages={messages}
-        renderMessageContent={renderMessageContent}
-        quickReplies={defaultQuickReplies}
+        quickReplies={quickReplies}
         onQuickReplyClick={handleQuickReplyClick}
         onSend={handleSend}
+        renderMessageContent={renderMessageContent}
+        {...rest}
       />
     </div>
   );

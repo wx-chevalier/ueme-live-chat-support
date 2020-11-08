@@ -1,6 +1,11 @@
-import { NavbarProps } from '@chatui/core';
+import { ChatProps, MessageProps } from '@chatui/core';
 
-export interface IRoomProps {
+type MessageWithoutId = Omit<MessageProps, '_id'>;
+
+export interface IRoomProps extends Partial<ChatProps> {
   title?: string;
-  navbar?: NavbarProps;
+  initialMessages?: MessageWithoutId[];
+
+  /** 针对消息进行回复 */
+  answerMessage: (message: MessageWithoutId) => Promise<MessageWithoutId>;
 }

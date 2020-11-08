@@ -1,7 +1,7 @@
 import * as React from 'react';
 
-import { Exception } from '../../src';
+import { LiveConsultationRoom } from '../../src';
 
 export default function Simple() {
-  return <Exception />;
+  return <LiveConsultationRoom answerMessage={async m => m} />;
 }
