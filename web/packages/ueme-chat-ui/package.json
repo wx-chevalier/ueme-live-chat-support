@@ -1,6 +1,6 @@
 {
   "name": "@m-fe/ueme-chat-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Micro Front-end Libs",
   "repository": {
     "type": "git",
@@ -38,8 +38,8 @@
   },
   "peerDependencies": {
     "@m-fe/utils": "^0.4.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
   },
   "dependencies": {
     "@chatui/core": "^0.1.1",
